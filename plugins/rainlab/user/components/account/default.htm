@@ -1,0 +1,10 @@
+{% if not user %}
+
+	<!-- Login form -->
+            {% partial __SELF__ ~ '::signin' %}
+
+{% else %}
+
+    {% partial __SELF__ ~ '::activation_check' %}
+
+{% endif %}

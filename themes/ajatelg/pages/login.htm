@@ -1,0 +1,15 @@
+title = "login"
+url = "/login"
+layout = "login"
+is_hidden = 0
+
+[account]
+redirect = "index"
+paramCode = "code"
+forceSecure = 1
+
+[session]
+security = "guest"
+redirect = "index"
+==
+{% component 'account' %}
